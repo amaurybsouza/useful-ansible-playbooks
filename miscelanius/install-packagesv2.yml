@@ -1,9 +1,14 @@
 ---
 - name: Install a list of packages 
-  hosts: prod
+  hosts: aws
   become: true
   gather_facts: false
   tasks:
+    - name: Update all packages to their latest version
+      apt:
+        name: "*"
+        state: latest
+    
     - name: Install a list of packages
       apt:
         pkg:
