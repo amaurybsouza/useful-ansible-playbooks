@@ -1,29 +1,31 @@
 # Useful Ansible Playbooks
 
-Foobar is a Python library for dealing with word pluralization.
+A collection of minimalist Ansible playbooks for automating server setups.
 
-## Installation
+## Run your first network Ansible command
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+The first thing to do is check the connectivity on the remote server:
 
-```bash
-pip install foobar
+#### Usage
+
+```yml
+$ ansible [pattern] -m [module] -a "[module options]"
 ```
 
-## Usage
+Now you can check the ping module command on the servers:
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```yml
+# ansible aws -m ping -i inventory.yml 
+elliot01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
 ```
+
+## Run Your First Command and Playbook
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
