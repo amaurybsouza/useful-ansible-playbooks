@@ -1,0 +1,14 @@
+---
+- name: Install a list of packages 
+  hosts: aws
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Copy file with owner and permissions
+      ansible.builtin.copy:
+        src: /opt/foo.conf
+        dest: /etc/foo.conf
+        owner: foo
+        group: foo
+        mode: '0644'
+...
