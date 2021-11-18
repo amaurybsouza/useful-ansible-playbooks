@@ -2,6 +2,10 @@
 
 A collection of minimalist Ansible playbooks for automating server setups.
 
+## Getting Started
+
+To set up your Ansible environment, please follow my article on Medium: [Ansible: do zero ao Zabbix](https://amauryborgesouza.medium.com/ansible-dozeroaozabbix-a52a5c98175c)
+
 ## Run your first network Ansible command
 
 The first thing to do is check the connectivity on the remote server:
