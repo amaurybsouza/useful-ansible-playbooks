@@ -8,7 +8,7 @@
       ansible.builtin.copy:
         src: /opt/foo.conf
         dest: /etc/foo.conf
-        owner: foo
-        group: foo
+        owner: root
+        group: root
         mode: '0644'
 ...
