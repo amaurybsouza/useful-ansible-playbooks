@@ -1,6 +1,6 @@
 ---
 - name: Install a list of packages 
-  hosts: docker
+  hosts: prod
   become: true
   gather_facts: false
   tasks:
