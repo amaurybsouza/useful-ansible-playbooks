@@ -1,0 +1,14 @@
+---
+- name: Install a list of packages 
+  hosts: docker
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Install a list of packages
+      apt:
+        pkg:
+          - net-tools
+          - firewalld
+          - apache2
+        state: present
+...
