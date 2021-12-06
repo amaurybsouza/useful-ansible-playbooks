@@ -1,5 +1,4 @@
 *.pem
 *inventory*
 *priority*
-*roles*
-*.yml
+*/roles*
