@@ -1,3 +1,5 @@
 *.pem
 *inventory*
 *priority*
+*roles*
+roles/major-incidents*
