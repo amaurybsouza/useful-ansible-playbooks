@@ -18,6 +18,10 @@ $ ansible [pattern] -m [module] -a "[module options]"
 
 Now you can check the ping module command on the servers:
 
+```bash
+mkdir girus
+```
+
 ```yml
 # ansible aws -m ping -i inventory.yml 
 elliot01 | SUCCESS => {
