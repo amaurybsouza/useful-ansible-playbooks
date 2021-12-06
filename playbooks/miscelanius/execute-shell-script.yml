@@ -1,0 +1,11 @@
+---
+- name: Install a list of packages 
+  hosts: aws
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Run a shell script
+      shell: |
+        #!/bin/bash
+        mkdir /tmp/newwca
+...
